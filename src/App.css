@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  font-family: Poppins;
+
+
+}
+.navbar{
+  height: 90px;
+  background-color: white;
+  box-shadow: 1px 2px 5px rgb(104, 100, 100);
+}
+.navbar__logo img{
+ width :120px;
+ margin: 20px;
+}
+
+
+section{
+  padding:40px;
+  display: flex;
+  flex-direction: column;
+}
+.hero__img{
+  max-width: 400px;
+  align-self: center;
+  margin:30px 0;
+
+}
+.hero__header{
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 20px;
+}
+.hero__text{
+  max-width: 800px;
+}
+
+/* -------- start the caard style  -------  */
+
+.cards-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+ column-gap:10px;
+ overflow-x: auto;
+
+
+
+ /* this hide the scrol bar */
+ scrollbar-width: none; /* Firefox */
+
+
+ overflow: -moz-scrollbars-none; /* Firefox */
+ -ms-overflow-style: none;/* IE and Edge */
+}
+.cardd{
+width:176px;
+min-width: 176px;
+position: relative;}
+.spot-point{
+  background-color: white;
+  padding:3px;
+  font-size: 11px;
+  position: relative; 
+  top:-230px;
+  left:10px;
+}
+.card__img img{
+  height:235px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+.card__info{
+  padding-top:10px;
+  font-size: 12px;
+}
+.card__info>*{
+  padding-bottom: 5px;
+}
+.card__info--rating{
+  display: flex;
+  column-gap: 5px;
+}
+.card__info--rating img{
+  width:16px;
+  align-self: center;
+}
+
+.card__info--rating> .rating-country{
+  color:gray;
+}
+.card__info--header{
+  margin:0;
+}
+.card__info--priceing>.priceing{
+  font-weight: bold;
+}
